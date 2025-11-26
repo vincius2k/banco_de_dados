@@ -1,0 +1,338 @@
+{
+  "version": "7.4.0",
+  "versiondate": "2024-01-01",
+  "name": "Sistema de Restaurante",
+  "description": "Modelo Conceitual - Sistema de Banco de Dados para Restaurante",
+  "author": "",
+  "company": "",
+  "project": "restaurante",
+  "sideLeftWidth": 250,
+  "sideRightWidth": 250,
+  "showSideLeft": true,
+  "showSideRight": true,
+  "objects": {
+    "7b8c9d0e-1a2b-3c4d-5e6f-7g8h9i0j1k2l": {
+      "name": "CLIENTE",
+      "comment": "",
+      "originalName": "CLIENTE",
+      "kind": "entity",
+      "color": "#ffffff",
+      "position": {
+        "x": 100,
+        "y": 200
+      },
+      "width": 150,
+      "height": 100,
+      "zOrder": 1,
+      "parentId": null,
+      "attributes": [
+        {
+          "name": "CPF",
+          "originalName": "CPF",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+          "isKey": true,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Nome",
+          "originalName": "Nome",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q",
+          "isKey": false,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Codigo_Area",
+          "originalName": "Codigo_Area",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "c3d4e5f6-g7h8-9i0j-1k2l-3m4n5o6p7q8r",
+          "isKey": false,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Numero",
+          "originalName": "Numero",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "d4e5f6g7-h8i9-0j1k-2l3m-4n5o6p7q8r9s",
+          "isKey": false,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        }
+      ]
+    },
+    "8c9d0e1f-2a3b-4c5d-6e7f-8g9h0i1j2k3l": {
+      "name": "PRATO",
+      "comment": "",
+      "originalName": "PRATO",
+      "kind": "entity",
+      "color": "#ffffff",
+      "position": {
+        "x": 600,
+        "y": 200
+      },
+      "width": 150,
+      "height": 100,
+      "zOrder": 2,
+      "parentId": null,
+      "attributes": [
+        {
+          "name": "ID",
+          "originalName": "ID",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "e5f6g7h8-i9j0-1k2l-3m4n-5o6p7q8r9s0t",
+          "isKey": true,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Descricao",
+          "originalName": "Descricao",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "f6g7h8i9-j0k1-2l3m-4n5o-6p7q8r9s0t1u",
+          "isKey": false,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Preco",
+          "originalName": "Preco",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "g7h8i9j0-k1l2-3m4n-5o6p-7q8r9s0t1u2v",
+          "isKey": false,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        }
+      ]
+    },
+    "9d0e1f2g-3a4b-5c6d-7e8f-9g0h1i2j3k4l": {
+      "name": "PEDIDO",
+      "comment": "",
+      "originalName": "PEDIDO",
+      "kind": "entity",
+      "color": "#ffffff",
+      "position": {
+        "x": 350,
+        "y": 400
+      },
+      "width": 150,
+      "height": 100,
+      "zOrder": 3,
+      "parentId": null,
+      "attributes": [
+        {
+          "name": "ID",
+          "originalName": "ID",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "h8i9j0k1-l2m3-4n5o-6p7q-8r9s0t1u2v3w",
+          "isKey": true,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Data_Hora_Abertura",
+          "originalName": "Data_Hora_Abertura",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "i9j0k1l2-m3n4-5o6p-7q8r-9s0t1u2v3w4x",
+          "isKey": false,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        },
+        {
+          "name": "Status_Pagamento",
+          "originalName": "Status_Pagamento",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "j0k1l2m3-n4o5-6p7q-8r9s-0t1u2v3w4x5y",
+          "isKey": false,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        }
+      ]
+    },
+    "0e1f2g3h-4a5b-6c7d-8e9f-0g1h2i3j4k5l": {
+      "name": "INDICACAO",
+      "comment": "",
+      "originalName": "INDICACAO",
+      "kind": "entity",
+      "color": "#ffffff",
+      "position": {
+        "x": 100,
+        "y": 550
+      },
+      "width": 150,
+      "height": 80,
+      "zOrder": 4,
+      "parentId": null,
+      "attributes": [
+        {
+          "name": "Data",
+          "originalName": "Data",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "k1l2m3n4-o5p6-7q8r-9s0t-1u2v3w4x5y6z",
+          "isKey": false,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        }
+      ]
+    },
+    "1f2g3h4i-5a6b-7c8d-9e0f-1g2h3i4j5k6l": {
+      "name": "ITEM_PEDIDO",
+      "comment": "",
+      "originalName": "ITEM_PEDIDO",
+      "kind": "entity",
+      "color": "#ffffff",
+      "position": {
+        "x": 500,
+        "y": 550
+      },
+      "width": 150,
+      "height": 80,
+      "zOrder": 5,
+      "parentId": null,
+      "attributes": [
+        {
+          "name": "Status_Entrega",
+          "originalName": "Status_Entrega",
+          "comment": "",
+          "dataType": "string",
+          "size": null,
+          "id": "l2m3n4o5-p6q7-8r9s-0t1u-2v3w4x5y6z7a",
+          "isKey": false,
+          "isUnique": false,
+          "isNotNull": true,
+          "isAutoIncrement": false,
+          "defaultValue": null
+        }
+      ]
+    }
+  },
+  "relationships": [
+    {
+      "name": "realiza",
+      "comment": "",
+      "originalName": "realiza",
+      "kind": "relationship",
+      "color": "#000000",
+      "isIdentifying": false,
+      "from": {
+        "object": "7b8c9d0e-1a2b-3c4d-5e6f-7g8h9i0j1k2l",
+        "cardinality": "1"
+      },
+      "to": {
+        "object": "9d0e1f2g-3a4b-5c6d-7e8f-9g0h1i2j3k4l",
+        "cardinality": "N"
+      }
+    },
+    {
+      "name": "faz",
+      "comment": "",
+      "originalName": "faz",
+      "kind": "relationship",
+      "color": "#000000",
+      "isIdentifying": false,
+      "from": {
+        "object": "7b8c9d0e-1a2b-3c4d-5e6f-7g8h9i0j1k2l",
+        "cardinality": "1"
+      },
+      "to": {
+        "object": "0e1f2g3h-4a5b-6c7d-8e9f-0g1h2i3j4k5l",
+        "cardinality": "N"
+      }
+    },
+    {
+      "name": "recebe",
+      "comment": "",
+      "originalName": "recebe",
+      "kind": "relationship",
+      "color": "#000000",
+      "isIdentifying": false,
+      "from": {
+        "object": "7b8c9d0e-1a2b-3c4d-5e6f-7g8h9i0j1k2l",
+        "cardinality": "1"
+      },
+      "to": {
+        "object": "0e1f2g3h-4a5b-6c7d-8e9f-0g1h2i3j4k5l",
+        "cardinality": "N"
+      }
+    },
+    {
+      "name": "contem",
+      "comment": "",
+      "originalName": "contem",
+      "kind": "relationship",
+      "color": "#000000",
+      "isIdentifying": false,
+      "from": {
+        "object": "9d0e1f2g-3a4b-5c6d-7e8f-9g0h1i2j3k4l",
+        "cardinality": "1"
+      },
+      "to": {
+        "object": "1f2g3h4i-5a6b-7c8d-9e0f-1g2h3i4j5k6l",
+        "cardinality": "N"
+      }
+    },
+    {
+      "name": "aparece_em",
+      "comment": "",
+      "originalName": "aparece_em",
+      "kind": "relationship",
+      "color": "#000000",
+      "isIdentifying": false,
+      "from": {
+        "object": "8c9d0e1f-2a3b-4c5d-6e7f-8g9h0i1j2k3l",
+        "cardinality": "1"
+      },
+      "to": {
+        "object": "1f2g3h4i-5a6b-7c8d-9e0f-1g2h3i4j5k6l",
+        "cardinality": "N"
+      }
+    }
+  ]
+}
